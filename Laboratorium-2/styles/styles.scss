@@ -1,0 +1,86 @@
+// Definicja zmiennych
+$bg-color: #f5f5f5;
+$text-color: #333;
+$link-color: #1371d6;
+
+// Mixin dla efektu hover
+@mixin hover-effect($color) {
+  &:hover {
+    background-color: $color;
+  }
+}
+
+// Stylizacja ogólna
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+// Nagłówek
+header {
+  background-color: darken($bg-color, 10%);
+  padding: 20px;
+  text-align: center;
+}
+
+// Artykuły
+article {
+  padding: 20px;
+  border-bottom: 1px solid darken($bg-color, 20%);
+  @include hover-effect(lighten($bg-color, 10%));
+}
+
+// Ukrywanie ostatniego artykułu poniżej 800px
+@media (max-width: 800px) {
+  article:last-child {
+    display: none;
+  }
+}
+
+// Zmiana kolejności elementów poniżej 800px
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+// Stylizacja linków
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+article.container {
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .image-wrapper-left {
+      display: flex;
+      justify-content: flex-start; // Domyślnie obrazki na środku
+    }
+    .image-wrapper-right {
+        display: flex;
+        justify-content: flex-end; // Domyślnie obrazki na środku
+    }
+      .image-wrapper-center {
+        display: flex;
+        justify-content: center; // Domyślnie obrazki na środku
+    }
+      .image-wrapper-space-between {
+        display: flex;
+        justify-content: space-between; // Domyślnie obrazki na środku
+    }
+  }
+  
+  

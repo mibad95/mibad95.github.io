@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Laboratorium 1</title>
+  </head>
+  <body>
+    <header>
+        <h1>Fajne komiksy co je lubię</h1>
+    </header>
+    <article>
+        <h2>Lista fajnych komiksów</h2>
+        <ol type="I">
+            <li>Invincible</li>
+            <li>Watchmen</li>
+            <li>Animal Man</li>
+            <li>Deadly Class</li>
+            <li>Sandman</li>
+        </ol>
+    </article>
+    <article>
+        <h2>Tabela fajnych komiksów</h2>
+        <table>
+            <caption>Fajne komiksy</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Tytuł</th>
+                    <th scope="col">Scenarzysta</th>
+                    <th scope="col">Rysownik</th>
+                    <th scope="col">Data oryginalnej publikacji</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Invincible</td>
+                    <td>Robert Kirkman</td>
+                    <td>Ryan Ottley</td>
+                    <td>2003 – 2018</td>
+                </tr>
+                <tr>
+                    <td>Watchmen</td>
+                    <td>Alan Moore</td>
+                    <td>Dave Gibbons</td>
+                    <td>1986 – 1987</td>
+                </tr>
+                <tr>
+                    <td>Animal Man</td>
+                    <td>Grant Morrison</td>
+                    <td>Chas Troug</td>
+                    <td>1988 – 1990</td>
+                </tr>
+                <tr>
+                    <td>Deadly Class</td>
+                    <td>Rick Remender</td>
+                    <td>Wes Craig</td>
+                    <td>2014 – 2022</td>
+                </tr>
+                <tr>
+                    <td>Sandman</td>
+                    <td>Neil Gaiman</td>
+                    <td><a href="https://en.wikipedia.org/wiki/The_Sandman_(comic_book)" target="_blank">Różni</a></td>
+                    <td>1989 – 1996</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <article>
+        <h2>Komiksy mają ładne okładki</h2>
+        <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" width="300">
+        <img src="images/invincible.jpg" alt="Invincible #17 Cover" width="300">
+        <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" width="300">
+    </article>
+    <article>
+        <h2>Formularz</h2>
+        <form method="get">
+            <label for="choose">Który komiks zainteresował się <strong>najbardziej</strong>?</label>
+            <select id="choose" name="choose">
+                <option selected disabled>Wybierz komiks</option>
+                <optgroup label="DC Comics">
+                    <option>Watchmen</option>
+                    <option>Sandman</option>
+                    <option>Animal Man</option>
+                </optgroup>
+                <optgroup label="Image Comics">
+                    <option>Invincible</option>
+                    <option>Deadly Class</option>
+                </optgroup>
+            </select><br>
+            <label for="propose">A może znasz jakiś <em>inny</em> fajny komiks?</label>
+            <input id="propose" name="propose" type="text" placeholder="Wpisz tytuł komiksu">
+            <button type="submit">Wyślij</button>
+        </form>
+    </article>
+    <article>
+        <h2>Dlaczego powinieneś czytać komiksy według ChataGiepete</h2>
+        <details>
+            <summary>Dlaczego powinieneś czytać komiksy?</summary>
+            <p>Czytanie komiksów to doskonały sposób na połączenie rozrywki z rozwijaniem wyobraźni i umiejętności czytania. Dzięki unikalnemu połączeniu tekstu i ilustracji komiksy angażują czytelnika i ułatwiają zrozumienie skomplikowanych historii oraz emocji bohaterów. Wzbogacają słownictwo, rozwijają myślenie wizualne i pozwalają lepiej interpretować treści narracyjne. Ponadto oferują szeroki wachlarz gatunków – od superbohaterskich opowieści po głębokie dramaty psychologiczne – dzięki czemu każdy znajdzie coś dla siebie. Komiksy są także świetnym wprowadzeniem do literatury, historii i kultury popularnej. To medium, które uczy, inspiruje i dostarcza niezapomnianych wrażeń.</p>
+        </details>
+    </article>
+    <article>
+        <h2>Co obecnie czytam i na jakim jestem etapie</h2>
+        <label for="progress">Invincible, tom 3</label>
+        <progress max="100" value="75"></progress>
+    </article>
+    <footer>
+        <h2>Odnośniki do wybranych zeszytów</h2>
+        <map name="comics">
+            <area 
+            shape="rect" 
+            coords="0,0,301,461"
+            href="https://leagueofcomicgeeks.com/comic/3613139/deadly-class-1"
+            alt="Deadly Class #1">
+            <area
+            shape="rect"
+            coords="301,0,602,461"
+            href="https://leagueofcomicgeeks.com/comic/2376380/invincible-17"
+            alt="Invincible 17#">
+            <area
+            shape="rect"
+            coords="602,0,903,461"
+            href="https://leagueofcomicgeeks.com/comic/1379627/animal-man-5"
+            alt="Animal Man #5">
+        </map>
+        <img 
+        usemap="#comics"
+        src="images/comics.jpg"
+        alt="Comics Graphic">
+    </footer>
+    </body>
+</html>

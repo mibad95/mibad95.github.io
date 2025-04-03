@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="src/build.css" rel="stylesheet">
+    <title>Laboratorium 3</title>
+  </head>
+  <body class="bg-gray-100 text-grey-950">
+    <header class="bg-blue-500 text-amber-400 text-center p-6 shadow-lg">
+        <h1 class=" text-4xl font-bold">Fajne komiksy co je lubię</h1>
+    </header>
+    <article class="bg-white p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-gray-700 text-2xl font-semibold pb-2">Lista fajnych komiksów</h2>
+        <ol class="list-[upper-roman] pl-4 text-gray-700">
+            <li class="py-1">Invincible</li>
+            <li class="py-1">Watchmen</li>
+            <li class="py-1">Animal Man</li>
+            <li class="py-1">Deadly Class</li>
+            <li class="py-1">Sandman</li>
+        </ol>
+    </article>
+    <article class="bg-green-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-green-800 text-2xl font-semibold">Tabela fajnych komiksów</h2>
+        <table class="table-auto border-collapse border border-green-800 w-full mt-4">
+            <caption class="text-green-800 font-medium mb-2">Fajne komiksy</caption>
+            <thead>
+                <tr class="bg-green-600">
+                    <th class="border border-green-900 px-4 py-2">Tytuł</th>
+                    <th class="border border-green-900 px-4 py-2">Scenarzysta</th>
+                    <th class="border border-green-900 px-4 py-2">Rysownik</th>
+                    <th class="border border-green-900 px-4 py-2">Data oryginalnej publikacji</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-green-400 text-center">
+                    <td class="border border-green-900 px-4 py-2">Invincible</td>
+                    <td class="border border-green-900 px-4 py-2">Robert Kirkman</td>
+                    <td class="border border-green-900 px-4 py-2">Ryan Ottley</td>
+                    <td class="border border-green-900 px-4 py-2">2003 – 2018</td>
+                </tr>
+                <tr class="bg-green-400 text-center">
+                    <td class="border border-green-900 px-4 py-2">Watchmen</td>
+                    <td class="border border-green-900 px-4 py-2">Alan Moore</td>
+                    <td class="border border-green-900 px-4 py-2">Dave Gibbons</td>
+                    <td class="border border-green-900 px-4 py-2">1986 – 1987</td>
+                </tr>
+                <tr class="bg-green-400 text-center">
+                    <td class="border border-green-900 px-4 py-2">Animal Man</td>
+                    <td class="border border-green-900 px-4 py-2">Grant Morrison</td>
+                    <td class="border border-green-900 px-4 py-2">Chas Troug</td>
+                    <td class="border border-green-900 px-4 py-2">1988 – 1990</td>
+                </tr>
+                <tr class="bg-green-400 text-center">
+                    <td class="border border-green-900 px-4 py-2">Deadly Class</td>
+                    <td class="border border-green-900 px-4 py-2">Rick Remender</td>
+                    <td class="border border-green-900 px-4 py-2">Wes Craig</td>
+                    <td class="border border-green-900 px-4 py-2">2014 – 2022</td>
+                </tr>
+                <tr class="bg-green-400 text-center">
+                    <td class="border border-green-900 px-4 py-2">Sandman</td>
+                    <td class="border border-green-900 px-4 py-2">Neil Gaiman</td>
+                    <td class="border border-green-900 px-4 py-2"><a href="https://en.wikipedia.org/wiki/The_Sandman_(comic_book)" target="_blank" class="underline hover:underline-offset-2">Różni</a></td>
+                    <td class="border border-green-900 px-4 py-2">1989 – 1996</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <article class="bg-stone-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-stone-800 text-2xl font-semibold">Komiksy mają ładne okładki</h2>
+        <div class="flex justify-center gap-4 mt-8">
+            <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" class="w-64 shadow-lg">
+            <img src="images/invincible.jpg" alt="Invincible #17 Cover" class="w-64 shadow-lg">
+            <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" class="w-64 shadow-lg">
+        </div>
+    </article>
+    <article class="bg-purple-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-purple-800 text-2xl font-semibold">Formularz</h2>
+        <form method="get" class="space-y-4 pt-4">
+            <div class="flex space-x-4">
+                <div class="flex-1">
+                    <label for="choose" class="block text-purple-800 font-medium text-center pb-2">Który komiks zainteresował się <strong>najbardziej</strong>?</label>
+                    <select id="choose" name="choose" class="border border-purple-900  rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-900">
+                        <option selected disabled>Wybierz komiks</option>
+                        <optgroup label="DC Comics">
+                            <option>Watchmen</option>
+                            <option>Sandman</option>
+                            <option>Animal Man</option>
+                        </optgroup>
+                        <optgroup label="Image Comics">
+                            <option>Invincible</option>
+                            <option>Deadly Class</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="flex-1">
+                    <label for="propose" class="block text-purple-800 font-medium text-center pb-2">A może znasz jakiś <em>inny</em> fajny komiks?</label>
+                    <input id="propose" name="propose" type="text" placeholder="Wpisz tytuł komiksu" class="border border-purple-900 p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-purple-900">
+                </div>
+            </div>
+            <div class="flex justify-center py-4">
+                <button type="submit" class="bg-purple-500 text-white px-4 py-2 rounded w-1/5 cursor-pointer hover:bg-purple-700 transition duration-100">Wyślij</button>
+            </div>
+        </form>
+    </article>
+    <article class="bg-red-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-red-700 text-2xl font-semibold">Dlaczego powinieneś czytać komiksy według ChataGiepete</h2>
+        <details class="mt-4">
+            <summary class="cursor-pointer text-red-700 font-medium text-lg">Dlaczego powinieneś czytać komiksy?</summary>
+            <p class="mt-2 text-red-700">Czytanie komiksów to doskonały sposób na połączenie rozrywki z rozwijaniem wyobraźni i umiejętności czytania. Dzięki unikalnemu połączeniu tekstu i ilustracji komiksy angażują czytelnika i ułatwiają zrozumienie skomplikowanych historii oraz emocji bohaterów. Wzbogacają słownictwo, rozwijają myślenie wizualne i pozwalają lepiej interpretować treści narracyjne. Ponadto oferują szeroki wachlarz gatunków – od superbohaterskich opowieści po głębokie dramaty psychologiczne – dzięki czemu każdy znajdzie coś dla siebie. Komiksy są także świetnym wprowadzeniem do literatury, historii i kultury popularnej. To medium, które uczy, inspiruje i dostarcza niezapomnianych wrażeń.</p>
+        </details>
+    </article>
+    <article class="bg-blue-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-blue-800 text-2xl font-semibold">Co obecnie czytam i na jakim jestem etapie</h2>
+        <label for="progress" class="block font-medium text-blue-800 pt-4 text-center">Invincible, tom 3</label>
+        <progress max="100" value="75" class="w-full h-4 bg-gray-300"></progress>
+    </article>
+    <article class="bg-gray-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-gray-780 text-2xl font-semibold">Flexbox: flex-row vs flex-col</h2>
+        <div class="flex flex-row gap-4 p-4 bg-gray-300 rounded-md">
+            <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" class="w-64 shadow-lg">
+            <img src="images/invincible.jpg" alt="Invincible #17 Cover" class="w-64 shadow-lg">
+            <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" class="w-64 shadow-lg">
+        </div>
+        <div class="flex flex-col gap-4 p-4 bg-gray-300 rounded-md mt-4">
+            <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" class="w-64 shadow-lg">
+            <img src="images/invincible.jpg" alt="Invincible #17 Cover" class="w-64 shadow-lg">
+            <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" class="w-64 shadow-lg">
+        </div>
+    </article>
+
+    <article class="bg-gray-100 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-gray-800 text-2xl font-semibold">Flexbox: flex-auto</h2>
+        <div class="flex gap-4 p-4 bg-gray-300 rounded-md">
+            <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" class="flex-auto w-40 shadow-lg">
+            <img src="images/invincible.jpg" alt="Invincible #17 Cover" class="flex-auto w-40 shadow-lg">
+            <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" class="flex-auto w-40 shadow-lg">
+        </div>
+    </article>
+
+    <article class="bg-gray-200 p-6 m-4 shadow-md rounded-lg">
+        <h2 class="text-gray-800 text-2xl font-semibold">Flexbox: flex-none</h2>
+        <div class="flex gap-4 p-4 bg-gray-300 rounded-md">
+            <img src="images/animal-man.jpg" alt="Animal Man #5 Cover" class="flex-none w-40 shadow-lg">
+            <img src="images/invincible.jpg" alt="Invincible #17 Cover" class="flex-none w-40 shadow-lg">
+            <img src="images/deadly-class.jpg" alt="Deadly Class #1 Cover" class="flex-none w-40 shadow-lg">
+        </div>
+    </article>
+    <footer class="bg-gray-800 text-white text-center p-6 mt-6">
+        <div class="flex justify-center mt-4 relative">
+            <img src="images/comics.jpg" alt="Comics Graphic" class="w-96 shadow-lg">
+            <div class="absolute top-15 right-70 w-4 h-4 bg-amber-500 rounded-full animate-ping"></div>
+            <div class="absolute top-40 right-250 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+            <div class="absolute top-35 right-15 w-5 h-5 bg-purple-500 rounded-full animate-ping"></div>
+            <div class="absolute top-5 right-270 w-4 h-4 bg-blue-500 rounded-full animate-ping"></div>
+        </div>
+    </footer>
+    </body>
+</html>
